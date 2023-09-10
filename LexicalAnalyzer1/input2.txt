@@ -1,0 +1,4 @@
+Start program
+Hello word!!!	From input-file
+teSt1  finisH program
+word
