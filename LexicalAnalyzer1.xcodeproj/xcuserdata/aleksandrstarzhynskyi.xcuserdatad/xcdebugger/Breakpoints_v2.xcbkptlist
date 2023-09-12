@@ -14,10 +14,10 @@
             filePath = "LexicalAnalyzer1/main.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "main(argc, argv)"
-            landmarkType = "9">
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -300,10 +300,10 @@
             filePath = "LexicalAnalyzer1/main.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "main(argc, argv)"
-            landmarkType = "9">
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -446,8 +446,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "addWord(words, word, index, symbolsCount, wordMaxSize)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -460,10 +460,10 @@
             filePath = "LexicalAnalyzer1/main.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "main(argc, argv)"
-            landmarkType = "9">
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "A8C8FB66-71BD-4222-BD91-3C66DFC82D49 - 93197811a786e7d6"
@@ -538,10 +538,10 @@
             filePath = "LexicalAnalyzer1/main.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "main(argc, argv)"
-            landmarkType = "9">
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "2D91D1A9-7304-4848-A58C-40718BE1EB53 - 93197811a786e7d6"
@@ -572,6 +572,85 @@
                   startingLineNumber = "130"
                   endingLineNumber = "130"
                   offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83EB6484-56AD-4531-92F7-E974034DBD24"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LexicalAnalyzer1/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50460231-B172-46A6-8A49-5E6F29107A31"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LexicalAnalyzer1/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "50460231-B172-46A6-8A49-5E6F29107A31 - 93197811a786e752"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "LexicalAnalyzer1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksandrstarzhynskyi/Repositories/Git/GitHub/LexicalAnalyzer1/LexicalAnalyzer1/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "50460231-B172-46A6-8A49-5E6F29107A31 - 93197811a786e771"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "LexicalAnalyzer1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksandrstarzhynskyi/Repositories/Git/GitHub/LexicalAnalyzer1/LexicalAnalyzer1/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "50460231-B172-46A6-8A49-5E6F29107A31 - 93197811a786e771"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "LexicalAnalyzer1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksandrstarzhynskyi/Repositories/Git/GitHub/LexicalAnalyzer1/LexicalAnalyzer1/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "176">
                </Location>
             </Locations>
          </BreakpointContent>

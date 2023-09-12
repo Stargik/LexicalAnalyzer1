@@ -103,11 +103,69 @@ int wordsCountArrInit(char **words, int wordsCountArr[], int wordCount){
     return maxPopular;
 }
 
+char** parseWordsFromFileWithAlpha(char **words, FILE *fp, char alpha[], int wordMaxSize, int wordArraySize, int alphaCount, int *wordCount){
+    char c;
+    int i = 0, j = 0, k = 0;
+    int isSeparator = 1;
+    char tmp[wordMaxSize];
+    memset(tmp,0,wordMaxSize);
+    if(fp)
+    {
+        while((c = fgetc(fp)) != EOF)
+        {
+            isSeparator = 1;
+            for(k = 0; k < alphaCount; k++){
+                if(c == alpha[k]){
+                    isSeparator = 0;
+                    k = 0;
+                    break;
+                }
+            }
+            
+            if(isSeparator){
+                if(j > 0 && j <= wordMaxSize){
+                    if(i >= wordArraySize - 1){
+                        words = doubleArraySize(words, wordArraySize);
+                        wordArraySize *= 2;
+                    }
+                    addWord(words, tmp, &i, &j, wordMaxSize);
+                }else{
+                    j = 0;
+                }
+            }else{
+                if(j < wordMaxSize){
+                    tmp[j] = c;
+                }
+                j++;
+            }
+        }
+        if(j > 0 && j <= wordMaxSize){
+            if(i >= wordArraySize - 1){
+                words = doubleArraySize(words, wordArraySize);
+                wordArraySize *= 2;
+            }
+            addWord(words, tmp, &i, &j, wordMaxSize);
+        }
+        
+        fclose(fp);
+    }
+    *wordCount = i;
+    return words;
+}
+
 int main(int argc, char * argv[])
 {
     int word_array_size = 2;
     char separators[] = {' ', '.', '!', '\n', '\t', '{', '}', '[', ']', '(', ')', '#', '%', '&', ':', '"', '\'', '<', '>', '\\', '$', '^', '?', '+', '=', '*', ';', '/'};
     int separators_count = sizeof(separators)/sizeof(char);
+    
+    int alpha_count = 26*2;
+    char alpha[alpha_count];
+    for (int i = 0; i < 26; i++) {
+        alpha[i] = (char) (i + 97);
+        alpha[i+26] = (char) (i + 65);
+    }
+    
     char **words = (char**)malloc(word_array_size * sizeof(char*));
     int wordCount = 0;
     char * filename = DEFAULT_INPUT_FILE_NAME;
@@ -117,8 +175,8 @@ int main(int argc, char * argv[])
 
     FILE *fp = fopen(filename, "r");
     
-    words = parseWordsFromFile(words, fp, separators, WORD_MAX_SIZE, word_array_size, separators_count, &wordCount);
-    
+    //words = parseWordsFromFile(words, fp, separators, WORD_MAX_SIZE, word_array_size, separators_count, &wordCount);
+    words = parseWordsFromFileWithAlpha(words, fp, alpha, WORD_MAX_SIZE, word_array_size, alpha_count, &wordCount);
     int wordsCountArr[wordCount];
     for (int i = 0; i < wordCount; i++) {
         wordsCountArr[i] = 0;
@@ -149,5 +207,8 @@ int main(int argc, char * argv[])
     }
     
 }
+
+
+
 
 
